@@ -1,0 +1,214 @@
+<!DOCTYPE html> <!--aquui definimos o tipo de documento-->
+<html lang="pt-BR">
+<!-- a tag head é utilizada para configurar a nossa pagina -->
+
+<head>
+    <!--essa tag serve para dizer quais tipo de caracteres vamos utilizar no site (utf-8)-->
+    <meta charset="utf-8" />
+    <!--aqui configuramos a escala (tipos de tela) em que o site vai ser exibindo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- titulo da pagina , exibido na guia do site-->
+    <title>Quem sou eu </title>
+</head>
+<!-- a tag body é usada para trazer as informações que vão aparecer dentro  do site-->
+
+<body>
+    <!--cabeçalho-->
+    <header>
+        <!-- as tags de h são para titulos e elas definem a importancia o peso, daquele titulo dentro 
+             da pagina, eles variam de h1 a h6 onde h1 é o mais importante e h6 é o menos importante-->
+        <h1>titulo com h1</h1>
+        <!-- a tag <p></p> serve para criar um paragrafo dentro da pagina-->
+        <p>uma pagina simples para me apresentar ao mundo! </p>
+    </header>
+    <!--corpo-->
+    <main>
+        <section>
+            <h2>Sobre mim</h2>
+            <!-- a tag img serve para adicionar imagens no nosso site ela vem com duas propriedades: 
+                  src ==> serve para mostrar o caminh0 da imagem 
+                  alt ==> é a descrição desta imagem 
+                  width ==> ajusta a largura da imagem
+                -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWNnT5O7aYr_GkfQ7IXPj0wytRiqKhzQACiTBNo4yumHoTCAxaQHPdedp77bTEW6zdYKA&usqp=CAU"
+                alt="homem feliz em ambiente industrial" width="350">
+
+            <p>
+                <!-- a tag strong serve para destacar uma palavra-->
+                <!-- a tag  br serve para quebrar linha -->
+                Olá! Eu sou <strong>Diego</strong> e adoro aprender Sobre tecnologia.<br /> acredito que programar é
+                uma forma de contar historias e resolver e problemas do mundo real. <br> nesta pagina, voce vai conhecer
+                um pouco
+                mais sobre mim.
+            </p>
+        </section>
+
+        <section>
+            <h2> interesses </h2>
+            <p> Algumas coisas que me fazem brilhar os olhos:</p>
+            <!-- para criar listas podemos usar as seguintes tags:
+                    ul==> listas sem ordem
+                    ol==> listas ordenadas
+                    cada item dentro de ums listas precisa vir dentro de uma tag li-->
+            <ul>
+                <li>Programação de js</li>
+                <li>arduino</li>
+                <li>fluxograma</li>
+                <li>projetos reais</li>
+                <li>projetos de baixo custo usando automoção</li>
+            </ul>
+        </section>
+
+        <section>
+
+            <h2>Objetivos</h2>
+            <p>Metas para os proximos meses:</p>
+            <ol>
+                <li>Aprender a desenvolver sites usando HTML, CSS , JAVA e JS</li>
+                <li>Aprender automoção usando ESP32</li>
+                <li>Aprender redes com cabeamento estruturado </li>
+            </ol>
+        </section>
+
+
+        <section>
+            <h2>Contatos</h2>
+            <p>Preencha o formulario para falar comigo :</p>
+
+            <!--
+ A tag <form> cria um formulario que pode ser usado para coletar informações do usuario 
+O atribulto "action" define para os dados serão enviados, como ainda não temos 
+isso definido deixamos o "#"
+O atributo "method" define como os dados serão enviados , o "post" é o mais comum e significa que esses
+dados vão ser salvos em um local                 
+-->
+
+            <form action="#">
+
+                <!--
+A tag <label> serve para descrever o campo, ou seja creiar uma legenda
+O atributo "for" deve sempre ter o mesmo valor que o "ID" do campo que ela descreve 
+Isso faz com que a acessibilidade do fique melhor, porque ao clicar no texto, o
+campo de digitação é selecionado            
+-->
+
+                <label for="nome">Nome: </label>
+                </br>
+
+                <!--
+A tag <input> cria um campo de entrada, uma caixa para usuario digitar algo.
+O type serve para indicar qual o tipo de valor que o campo vai receber.
+O name é o nome da informção que vai ser enviada no formulario.
+O  id é o identificador UNICO usado para vincular o campo com o <label>
+O required faz com que o campo seja obrigatorio para envio.                 
+-->
+
+                <input type="text" name="nome" id="nome">
+                <br /><br />
+
+                <label for="email">E-mail:</label>
+                <br />
+                <input type="email" name="email" id="email" required>
+                <br /><br />
+
+                <label for="mensagem">Mensagem:</label>
+                <br />
+                <input type="text" name="mensagem" id="mensagem">
+                <br /><br />
+
+
+                <!--
+A tag <button> cria um botão clicavel. O atributo type indica o tipo do botão,
+nesse caso o submit  indica  que o botão vai enviar o formulario  
+-->
+                <button type="submit">Enviar mensagem</button>
+        </section>
+
+        <section>
+            <!--
+A tag <table> cria uma tabela para organizar dados em linhas e colunas.
+O atributo border é usado apenas para mostrar as bordas de formas de forma simples       
+-->
+
+            <table border="1">
+                <!--
+A tag <caption> define o titulo ou legenda da tabela.
+Ela aparece logo acima e serve para descrever o conteudo da tabela.                    
+-->
+
+                <caption>Minhas Habilidades</caption>
+                <!--
+A tag <thead> (table head) agrupa as linhas que formam cabeçalho de tabela 
+ dentro dele, usamos <tr> (table row) para criar uma linha e <th> (table header)
+para defiinir as celulas do cabeçalho                
+-->
+
+
+                <thead>
+                    <!--Cada <tr> cria uma linha na tabela-->
+                    <tr>
+                 <!-- Cada <th> representa o titulo de uma coluna -->
+                        <th>Linguagem</th>
+                        <th>Principais conteúdos</th>
+                        <th>Nivel de dificudades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Estrutura de paginas ,tags, links,listas, formularios e tabelas </td>
+                        <td>Facil☢️</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Cores, fontes , layouts, responsividade e animação simples</td>
+                        <td>Medio☢️☢️</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>variaveis, funções, eventos, condicionais manipulação do Dom</td>
+                        <td>Dificil☢️☢️☢️</td>
+
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>Variaveis, estruturas de controle e funções</td>
+                        <td>Dificil☢️☢️☢️</td>
+                    </tr>
+                    <tr>
+                        <td>JAVA</td>
+                        <td>variaveis, funções, eventos, condicionais </td>
+                        <td>IMPOSSIVEL☠️☠️☠️☠️☠️☠️</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <section>
+            <h2>Redes Sociais</h2>
+            <!-- A tag <a> é uma tag de ancora que cria um link para outras paginas
+O href serve para acrescentar este link ao texto           
+-->
+            <p>
+                Instagram: <a
+                    href="https://www.instagram.com/tiodigoficial?igsh=MWpxcndkMXZsOTY0bQ==">@tiodigoficial</a>
+            </p>
+
+            <p>
+                Linkedin <a href="https://www.linkedin.com/in/diego-da-silva-lira-35a76a2a8/">@diegodasilvalira</a>
+            </p>
+
+            <p>
+                Github<a href="https://github.com/digjhonson">@digJhonson</a>
+            </p>
+        </section>
+    </main>
+    <!--rodapé-->
+    <footer>
+        <p>site desenvolvido pela turma de IoT01</p>
+    </footer>
+
+</body>
+
+</html>
