@@ -1,0 +1,122 @@
+/*
+====================================================================================================================================
+O CSS (cascading Style sheets) server para definir o estilo visual do HTML.
+Ele trabalha com três partes principais::after
+     -SELETOR: o que será estilizado (ex: body, h1, classe, #id)
+     -PROPRIEDADE: o que sera alterado (ex: color, front size) 
+     -VALOR: o novo estilo (ex: blue, 20px)
+====================================================================================================================================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+/*
+O seletor universal (*) aplica o estilo a Todos os elementos da pagina.
+Aqui usamos para remover as margens 
+ */
+
+ *{
+    margin: 0;
+    padding: 0;
+ }
+
+/*
+o seletor body representa o corpo da pagina 
+As propridades definem a aparencia geral do site
+*/
+
+body{
+    /*tipo de fonte do site*/
+    font-family:  "Titan One", sans-serif;
+   /*co de fundo*/
+    background-color: #0a192f ;
+    /* cor da fonte*/
+    color: #e2e8f0;
+    /*altura das linhas*/
+    line-height: 1.6 ;
+}
+
+
+/* Personalizar seleção de texto */
+::selection{
+    background-color: #00e5ff;
+    color: #000;
+}
+
+/*
+========================================================================================================================================
+TITULOS,TEXTOS E LINKS 
+======================================================================================================================================== 
+ */
+
+ /*
+ Seletores de tags (h1,h2,h3) estilizam os titulos 
+  */
+
+  h1 {
+    /* espaçamento inferior */
+      margin-bottom: 10px ;
+      /* altura da linha */
+      line-height: 1.25;
+      /* tamanho da fonte */
+      font-size: 2.4rem;
+      /* cor da fonte */
+      color: #00e5ff;
+      /* brilho de sombra */
+      text-shadow: 0 0 10px #6549E0 ;
+
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    line-height: 1.25;
+    font-size: 2.4rem;
+    color:#00e5ff;
+
+  }
+
+  p{
+    /* espaçamento inferior */
+     margin: bottom 14px; 
+     /* cor do paragrafo */
+     color: #AEBEE0;
+  }
+
+  a{
+    color: #00e5ff;
+    /* tiramos a decoração do meu texto ----> o none tira o sublinhado */
+    text-decoration: none;
+    /* criar uma transição ao passar o mouse */
+    transition: color 0.2s;
+  }
+/* O estado hover é acionado quando o usuario passa o mouse  */
+  a:hover{
+    color: #9600E1;
+     text-shadow: 0 0 10px#1994db;
+  }
+
+
+  /* 
+  ====================================================================================================
+  CABEÇALHO E MENU DE NAVEGAÇÃO
+  ====================================================================================================
+  */
+  header{
+    /* o linear-gradient cria um efeito degrade, passamos o angulo e depois as cores com porcetagem
+    que elas ão ocupar  */
+    background:linear-gradient(90deg, #111827 0%,#1e1b4b 100%);
+    /* espaçamentodentro da header*/
+    padding: 40px 20px;
+    /* alinhamento doo texto  */
+    text-align: center;
+    /* criar uma sombra */
+    box-shadow: 0 4px 20px rgb(0, 0, 0, 0.4);
+  }
+
+  nav {
+    background-color: #0F172A;
+    /* borada superior --> 1px (espessura), solid (o tipo de borda),cor */
+    border-top: # 1px solid  #1e293b;
+    /* bordar inferior --> 1px (espessura), solid (o tipo de borda),cor */
+    
+    border-bottom: 1px solid #1e293b;
+  }
