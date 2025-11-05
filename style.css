@@ -27,7 +27,7 @@ As propridades definem a aparencia geral do site
 
 body {
   /*tipo de fonte do site*/
-  font-family: "Titan One", sans-serif;
+  font-family: "Roboto", sans-serif;
   /*co de fundo*/
   background-color: #0a192f;
   /* cor da fonte*/
@@ -288,4 +288,9 @@ footer {
   color: #94a3b8;
   border-top: 1px solid #1e293b;
   font-size: 0.9rem;
+}
+
+#resposta{
+  color: #8761f7;
+  text-shadow: 0 0 10px #8761f7;
 }

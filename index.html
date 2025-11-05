@@ -98,7 +98,7 @@ isso definido deixamos como "#"
 O atributo "method" define como os dados serão enviados, o "post" é o mais comum 
 e significa que esses dados vão ser salvos em algum local
 -->
-            <form action="#">
+            <form id="form" onsubmit="enviarFormulario(event);">
                 <!-- 
 A tag <label> serve para descrever o campo, ou seja, criar uma legenda
 O atributo "for" deve sempre ter o mesmo valor que o "id" do campo que ela descreve
@@ -136,6 +136,7 @@ o <textarea> aceita várias linhas de texto.
 A tag <button> cria um botão clicavel. O atributo type indica o tipo do botão, 
 nesse caso o submit indica que o botão vai enviar o formulário               
 -->
+                 <p id="resposta"></p>
                 <button type="submit">Enviar mensagem</button>
             </form>
         </section>
@@ -227,5 +228,10 @@ O href serve para acrescentar este link ao texto
     </footer>
 
 </body>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script src="env.js"></script>
+<script src="script.js"></script>
 
 </html>
